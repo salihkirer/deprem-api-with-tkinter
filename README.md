@@ -1,15 +1,21 @@
-# deprem-api
-### Parametreler:
-- **size** : Depremin büyüklüğüne göre filtreleme yapar.
-- **location** : Depremin lokasyonuna göre filtereleme yapar.
+# deprem-api-with-tkinter
+### Dosyalar:
+- **index.py** : Kandilli rasathanesinin sitesinden çekilen verileri ayrıştırarak Json haline getiren ve yayınlayan api.
+- **form.py** : Deprem verilerini konuma, büyüklüğüne göre filtreleme ve listeleme imkanı sunan program.
 
-### Örnekler:
-- https://deprem-api.vercel.app
-- https://deprem-api.vercel.app/?size=3.1
-- https://deprem-api.vercel.app/?location=istanbul
-- https://deprem-api.vercel.app/?size=3.1&location=istanbul
+### Çalıştırma:
+- Gerekli kütüphaneler yüklenir.
+- API (index.py) çalıştırılır. 
+- Form uygulamsı çalıştırılır.
+- Filtreleme ve listeleme işlemleri yapılır.
 
-## JSON Çıktısı:
+### Örnek API İstekleri:
+- http://127.0.0.1:3000/
+- http://127.0.0.1:3000/?size=3.1
+- http://127.0.0.1:3000/?location=istanbul
+- http://127.0.0.1:3000/?size=3.1&location=istanbul
+
+### JSON Çıktısı:
 ```jsonc
 "earthquakes": [
     {
@@ -29,3 +35,7 @@
     }, {...}
 ]
 ```
+### Form Ekranı:
+![formEkrani](https://user-images.githubusercontent.com/33867383/215184467-beb6dd30-833f-4da1-8e28-5ebce4ef7d0c.PNG)
+
+
